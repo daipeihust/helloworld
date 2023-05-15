@@ -1,0 +1,9 @@
+module main
+
+import StdEnv
+
+Start world
+  #(console, world) = stdio world
+  #console = fwrites "Hello, world!\n" console
+  #(ok, world) = fclose console world
+  = world

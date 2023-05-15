@@ -1,0 +1,11 @@
+.assembly main {}
+.class Main
+{
+  .method static void Main() cil managed
+  {
+    .entrypoint
+    ldstr "Hello, world!"
+    call void [mscorlib]System.Console::WriteLine(string)
+    ret
+  }
+}

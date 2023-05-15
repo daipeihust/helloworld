@@ -1,0 +1,5 @@
+# Thanks for trying out Claro during its early development stages!
+# To learn Claro by example, check out:
+# https://clarolang.com/tree/main/src/java/com/claro/claro_programs
+
+print("Hello, world!");

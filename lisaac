@@ -1,0 +1,8 @@
+Section Header
+  + name := MAIN;
+
+Section Public
+  - main <-
+  (
+    "Hello, world!\n".print;
+  );

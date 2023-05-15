@@ -1,0 +1,15 @@
+use io
+
+runProg: '{IO, Exception} a -> '{IO} ()
+runProg f = 'let
+  printErr err = match err with
+    Failure _ errMsg _ -> handle putBytes (stdHandle StdErr) (toUtf8 errMsg) with cases
+      {raise _ -> _} -> ()
+      {_} -> ()
+  match catch f with
+    Left err -> printErr err
+    Right _ -> ()
+
+main: '{IO} ()
+main = runProg 'let
+  printLine "Hello, world!"

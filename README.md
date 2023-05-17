@@ -1,2 +1,2 @@
 # HelloWorld
-HelloWorld program in every language!
+HelloWorld program of every language!
